@@ -7,11 +7,9 @@ function itemFor(item, index){
     const listPokemon =
     document.getElementById("poke-list")
 
-    // CARD
     const line =
     document.createElement("li")
 
-    // IMAGEM
     const imagePokemon =
     document.createElement("img")
 
@@ -24,19 +22,16 @@ function itemFor(item, index){
     namePokemon.innerHTML =
     item.name
 
-    // NUMERO
     const numberPokemon =
     document.createElement("span")
 
     numberPokemon.innerHTML =
     "#" + (index + 1)
 
-    // ADICIONAR ELEMENTOS
     line.appendChild(imagePokemon)
     line.appendChild(namePokemon)
     line.appendChild(numberPokemon)
 
-    // ADICIONAR CARD NA LISTA
     listPokemon.appendChild(line)
 
 }
